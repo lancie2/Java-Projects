@@ -1,0 +1,43 @@
+{
+  "C:\\Users\\Lancie\\SkyDrive\\Class Assignments\\CS 314\\Assignment 1\\src": {
+    "location": "C:\\Users\\Lancie\\SkyDrive\\Class Assignments\\CS 314\\Assignment 1\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027C:\\Users\\Lancie\\SkyDrive\\Class Assignments\\CS 314\\Assignment 1\\src\u0027. Skipped."
+  },
+  "C:\\Program Files\\Java\\jre7\\lib\\rt.jar": {
+    "coordinate": "jre:jre:zip:call:1.0.0",
+    "location": "C:\\Program Files\\Java\\jre7\\lib\\rt.jar",
+    "status": "RESOLVED",
+    "error": "No class path info available for \u0027C:\\Program Files\\Java\\jre7\\lib\\rt.jar\u0027. Skipped."
+  },
+  "C:\\Users\\Lancie\\SkyDrive\\Class Assignments\\CS 314\\Assignment 2\\src": {
+    "location": "C:\\Users\\Lancie\\SkyDrive\\Class Assignments\\CS 314\\Assignment 2\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027C:\\Users\\Lancie\\SkyDrive\\Class Assignments\\CS 314\\Assignment 2\\src\u0027. Skipped."
+  },
+  "C:\\Users\\Lancie\\SkyDrive\\Class Assignments\\CS 314\\Assignment 3\\src": {
+    "location": "C:\\Users\\Lancie\\SkyDrive\\Class Assignments\\CS 314\\Assignment 3\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027C:\\Users\\Lancie\\SkyDrive\\Class Assignments\\CS 314\\Assignment 3\\src\u0027. Skipped."
+  },
+  "C:\\Users\\Lancie\\SkyDrive\\Class Assignments\\CS 314\\Assignment 4\\src": {
+    "location": "C:\\Users\\Lancie\\SkyDrive\\Class Assignments\\CS 314\\Assignment 4\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027C:\\Users\\Lancie\\SkyDrive\\Class Assignments\\CS 314\\Assignment 4\\src\u0027. Skipped."
+  },
+  "C:\\Users\\Lancie\\SkyDrive\\Class Assignments\\CS 314\\Assignment 9\\src": {
+    "location": "C:\\Users\\Lancie\\SkyDrive\\Class Assignments\\CS 314\\Assignment 9\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027C:\\Users\\Lancie\\SkyDrive\\Class Assignments\\CS 314\\Assignment 9\\src\u0027. Skipped."
+  },
+  "C:\\Users\\Lancie\\SkyDrive\\Class Assignments\\CS 314\\Assignment 10\\src": {
+    "location": "C:\\Users\\Lancie\\SkyDrive\\Class Assignments\\CS 314\\Assignment 10\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027C:\\Users\\Lancie\\SkyDrive\\Class Assignments\\CS 314\\Assignment 10\\src\u0027. Skipped."
+  },
+  "C:\\Users\\Lancie\\SkyDrive\\Class Assignments\\CS 314\\Assignment 12\\src": {
+    "location": "C:\\Users\\Lancie\\SkyDrive\\Class Assignments\\CS 314\\Assignment 12\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027C:\\Users\\Lancie\\SkyDrive\\Class Assignments\\CS 314\\Assignment 12\\src\u0027. Skipped."
+  }
+}

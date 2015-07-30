@@ -1,0 +1,119 @@
+import java.util.*;
+
+public class NameRecord {
+	
+	//Declare instance variables	
+	private String name;
+	private ArrayList<Integer> rank;
+	
+	private static int NUM_DECADES = 11;
+	private static int UNRANKED = 1001;
+	
+	/*constructor
+	 *pre: name != null
+	 *post: none */
+	public NameRecord(String name, int[] ranks) {
+		//check arguments against conditions
+		if(name.equals(null)) {
+			throw new IllegalArgumentException("Name cannot be null: " + name);
+		}
+		
+		this.name = name;
+		for(int index = 0; index < NUM_DECADES-1; index++) {
+			int current  = ranks[index];
+			if(current == 0) {
+				current += UNRANKED;
+			}
+			rank.add(index, current);
+		}
+	}
+	
+	//get name
+	public String name() {
+		return this.name;
+	}
+	
+	//get rank for decade
+	public int getRank(int decade) {
+		return rank.get(decade);
+	}
+	
+	//returns the decade listed as best
+	public int bestRank() {
+		return this.decade(this.indexOfBestDecade());
+	}
+	
+	//return the number of decades in top 1000
+	public int numRanked() {
+		int count = 0;
+		for(int index = 0; index < NUM_DECADES; index++) {
+			if(rank.get(index) != UNRANKED) {
+				count++;
+			}
+		}
+		return count;
+	}
+	
+	//return true if all decades in top 1000
+	//return false otherwise
+	public boolean allRanked() {
+		return this.numRanked() == NUM_DECADES;
+	}
+	
+	//return true if only one decade in top 1000
+	//return false otherwise
+	public boolean oneRanked() {
+		return this.numRanked() == 1;
+	}
+	
+	//return true if name gets more popular
+	//return false otherwise
+	public boolean upwardTrend() {
+		for(int index = 1; index < NUM_DECADES; index++) {
+			if(rank.get(index-1) <= rank.get(index)) {
+				return false;
+			}
+		}
+		return true;
+	}
+	
+	//return true if name gets less popular
+	//return false otherwise
+	public boolean downwardTrend() {
+		for(int index = 1; index < NUM_DECADES; index++) {
+			if(rank.get(index-1) >= rank.get(index)) {
+				return false;
+			}
+		}
+		return true;
+	}
+	
+	//get value of most popular name
+	public int indexOfBestDecade() {
+		int min = rank.get(0);
+		for(int index = 1; index < NUM_DECADES; index++) {
+			min = Math.min(min, rank.get(index));
+		}
+		return min;
+	}
+	
+	//when given an int, return the decade it represents
+	public int decade(int decade) {
+		switch(decade) {
+		case 0  : return 1900;
+		case 1  : return 1910;
+		case 2  : return 1920;
+		case 3  : return 1930;
+		case 4  : return 1940;
+		case 5  : return 1950;
+		case 6  : return 1960;
+		case 7  : return 1970;
+		case 8  : return 1980;
+		case 9  : return 1990;
+		case 10 : return 2000;
+		default : return 0;
+		}
+	}
+		
+
+}

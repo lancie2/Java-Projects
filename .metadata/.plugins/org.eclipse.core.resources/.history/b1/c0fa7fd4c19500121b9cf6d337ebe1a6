@@ -1,0 +1,269 @@
+public class LetterInventory {
+
+	private static final int NUM_LETTERS = 26;
+	
+	private int lettersUsed;
+	private int[] inventory;
+	
+	/* Zero Argument Constructor:
+	 * @Pre:  none
+	 * @Post: Creates a container will hold the letter inventory, initializes lettersUsed to zero
+	 */
+	LetterInventory() {
+	
+		lettersUsed = 0;
+		inventory = new int[ NUM_LETTERS ];
+		
+	}
+	
+	/* Constructor:
+	 * @Pre:  String must not be null
+	 * @Post: Creates a container will hold the letter inventory
+	 */
+	LetterInventory( String input ) {
+	
+		lettersUsed = 0;
+		String temp = input.toLowerCase();	//create temp String so input is not changed
+		inventory = new int[ NUM_LETTERS ];
+		getInventory( temp );
+		
+	}
+	
+	/* getInventory:
+	 * helper method that gets the occurance of each letter in a given string
+	 * @Pre: String != null
+	 * @Post: lettersUsed updated to reflect number of unique letters in input String,
+	 *        inventory contains the number of each occurance of each letter.
+	 */
+	private void getInventory( String input ) {
+		
+		//base Case: The string's length == 0, then do nothing; move on to general case VVV
+		
+		if( input.length() > 0 ) {
+		
+			char currentChar = input.charAt( 0 );
+			
+			if( inventory[ charIndex( currentChar ) ] == 0 ) {
+				
+				lettersUsed++;
+				
+			}
+		
+			if( Character.isLetter( currentChar ) ) {
+			
+				inventory[ charIndex( currentChar ) ]++;
+				
+			}
+				
+			getInventory( input.substring( 1 ) );
+			
+		}	
+			
+	}
+	
+	/* get:
+	 * returns the number of occurances of given character
+	 * @Pre: none
+	 * @Post: none
+	 */
+	public int get( char input ) {
+	
+		char temp = Character.toLowerCase( input );
+		return inventory[ charIndex( temp ) ];
+		
+	}
+	
+	/* size:
+	 * returns size of the inventory
+	 * @Pre: none
+	 * @Post: none
+	 */
+	public int size() {
+	
+		return lettersUsed;
+		
+	}
+	
+	/* isEmpty:
+	 * returns TRUE if the container is empty, returns FALSE if the container is not empty.
+	 * @Pre: none
+	 * @Post: none
+	 */
+	public boolean isEmpty() {
+	
+		return lettersUsed == 0;
+		
+	}
+	
+	/* toString:
+	 * This method returns a string representation of the inventory
+	 * @Pre: none
+	 * @Post: none
+	 */
+	public String toString() {
+	
+		StringBuilder result = new StringBuilder();
+		
+		for( int indexInventory = 0; indexInventory < inventory.length; indexInventory++ ) {
+			
+			for( int printCount = 0; printCount < inventory[ indexInventory ]; printCount++ ) {
+				
+				result.append( indexChar( indexInventory ) );
+				System.out.println("String so far: " + result.toString() );
+				
+			}
+			
+		}
+		
+		return result.toString();
+		
+	}
+	
+	/* add:
+	 * This method returns a new letterInventory containing the sum of each
+	 * occurance of each letter.
+	 * @Pre: none
+	 * @Post: none
+	 */
+	 public LetterInventory add( LetterInventory other ) {
+	 
+	 	if( other == null ) {
+	 	
+	 		throw new IllegalArgumentException( "parameter cannot be null!" );
+	 		
+	 	}
+	 
+	 	LetterInventory result = new LetterInventory();
+	 	
+	 	for( int index = 0; index < NUM_LETTERS; index++ ) {
+	 		
+	 		result.inventory[index] = this.inventory[index] + other.inventory[index];
+
+		}
+		
+		return result;
+		
+	}
+	
+	/* subtract:
+	 * This method returns a new letterInventory containing the difference of each
+	 * occurance of each letter.
+	 * @Pre: none
+	 * @Post: none
+	 */
+	 public LetterInventory subtract( LetterInventory other ) {
+	 
+	 	if( other == null ) {
+	 	
+	 		throw new IllegalArgumentException( "parameter cannot be null!" );
+	 		
+	 	}
+	 
+	 	boolean negative = false;
+	 	LetterInventory result = new LetterInventory();
+	 	
+	 	for( int index = 0; index < NUM_LETTERS; index++ ) {
+	 		
+	 		result.inventory[ index ] = this.inventory[ index ] - other.inventory[ index ];
+	 		
+	 		if( result.inventory[ index ] < 0 ) {
+	 		
+	 			negative = true;
+	 			
+	 		}
+
+		}
+		
+		if( negative ) { 
+			
+			return null;
+			
+		}
+		
+		return result;
+		
+	}
+	 
+	 public boolean equals( Object other ) {
+		 
+		 if( other == null ) {
+			 throw new IllegalArgumentException( "Violation of precondition: parameter cannot be null" );
+		 }
+		 
+		 return false;
+		 
+	 }
+	 
+	 
+	private static int charIndex( char input ) {
+	
+		switch( input ) {
+		
+			case 'a' : return 0;
+			case 'b' : return 1;
+			case 'c' : return 2;
+			case 'd' : return 3;
+			case 'e' : return 4;
+			case 'f' : return 5;
+			case 'g' : return 6;
+			case 'h' : return 7;
+			case 'i' : return 8;
+			case 'j' : return 9;
+			case 'k' : return 10;
+			case 'l' : return 11;
+			case 'm' : return 12;
+			case 'n' : return 13;
+			case 'o' : return 14;
+			case 'p' : return 15;
+			case 'q' : return 16;
+			case 'r' : return 17;
+			case 's' : return 18;
+			case 't' : return 19;
+			case 'u' : return 20;
+			case 'v' : return 21;
+			case 'w' : return 22;
+			case 'x' : return 23;
+			case 'y' : return 24;
+			case 'z' : return 25;
+			default: return -1;
+			
+		}
+	}
+	
+	private static char indexChar( int input ) {
+	
+		switch( input ) {
+		
+			case 0 : return 'a';
+			case 1 : return 'b';
+			case 2 : return 'c';
+			case 3 : return 'd';
+			case 4 : return 'e';
+			case 5 : return 'f';
+			case 6 : return 'g';
+			case 7 : return 'h';
+			case 8 : return 'i';
+			case 9 : return 'j';
+			case 10 : return 'k';
+			case 11 : return 'l';
+			case 12 : return 'm';
+			case 13 : return 'n';
+			case 14 : return 'o';
+			case 15 : return 'p';
+			case 16 : return 'q';
+			case 17 : return 'r';
+			case 18 : return 's';
+			case 19 : return 't';
+			case 20 : return 'u';
+			case 21 : return 'v';
+			case 22 : return 'w';
+			case 23 : return 'x';
+			case 24 : return 'y';
+			case 25 : return 'z';
+			default : return '0';
+			
+		}
+		
+	}
+	
+}

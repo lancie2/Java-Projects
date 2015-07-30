@@ -1,0 +1,18 @@
+import java.util.*;
+
+public class Names {
+	
+	private ArrayList<NameRecord> names;
+	private int baseDecade;
+	private int ranksPerName;
+	
+	public Names(Scanner read) {
+	    this.baseDecade = read.nextInt();
+		this.ranksPerName = read.nextInt();
+		while(read.hasNextLine()){
+		    String line = read.nextLine();
+		}
+		
+	
+
+}

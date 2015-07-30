@@ -1,0 +1,14 @@
+public class Guess {
+	
+	private ArrayList<Peg> guess;
+	
+	public Guess( Colors[] userGuess ) {
+	
+		guess = new ArrayList<Peg>;
+	
+		for( int index = 0; index < userGuess.length; index++ ) {
+			guess.add( new Peg( userGuess[index] ) );
+		}
+		
+	}
+}

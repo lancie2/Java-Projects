@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;data&apos; in &apos;BinarySearchTree.iterativeAdd(...)&apos; to &apos;value&apos;&#x0D;&#x0A;- Original project: &apos;Assignment 10&apos;&#x0D;&#x0A;- Original element: &apos;BinarySearchTree.iterativeAdd(E).data&apos;&#x0D;&#x0A;- Renamed element: &apos;data&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;data&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;{BinarySearchTree.java[BinarySearchTree~iterativeAdd~QE;@data!6591!6596!6593!6596!QE;!0!true" name="value" references="true" stamp="1366335677975" version="1.0"/>
+</session>

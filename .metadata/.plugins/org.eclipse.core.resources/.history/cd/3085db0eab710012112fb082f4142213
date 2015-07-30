@@ -1,0 +1,27 @@
+import java.util.*;
+
+public class Names {
+	
+	private ArrayList<NameRecord> names;
+	private int baseDecade;
+	private int ranksPerName;
+	
+	public Names(Scanner read) {
+	    this.baseDecade = read.nextInt();
+		this.ranksPerName = read.nextInt();
+		int[] ranks = new int[ranksPerName];
+		while(read.hasNextLine()){
+		    String line = read.nextLine();
+		    String[] parsedData = line.split("\\s+");
+		    if(parsedData.length == this.ranksPerName + 1) {
+		    	for(int index = 1; index <= this.ranksPerName; index++) {
+		    		ranks[index - 1] = Integer.parseInt(parsedData[index]);
+		    	}
+		    	this.names.add(new NameRecord(parsedData[0], ranks));
+		    }		
+		}
+	}
+		
+	
+
+}
