@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Hand()
+comment1.params=
+comment1.target=int\ size()
+comment2.params=
+comment2.target=java.lang.String\ toString()
+comment3.params=
+comment3.target=boolean\ isEmpty()
+comment4.params=
+comment4.target=Card[]\ clone()
+comment5.params=c
+comment5.target=void\ addCard(Card)
+comment6.params=
+comment6.target=Card\ getNext()
+numComments=7

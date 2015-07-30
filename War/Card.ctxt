@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Card()
+comment1.params=suit\ value
+comment1.target=Card(int,\ int)
+comment2.params=other
+comment2.target=boolean\ compareValue(Card)
+comment3.params=
+comment3.target=Card\ clone()
+comment4.params=other
+comment4.target=boolean\ equals(Card)
+comment5.params=
+comment5.target=java.lang.String\ getSuitAsString()
+comment6.params=
+comment6.target=java.lang.String\ getValueAsString()
+comment7.params=
+comment7.target=java.lang.String\ toString()
+numComments=8

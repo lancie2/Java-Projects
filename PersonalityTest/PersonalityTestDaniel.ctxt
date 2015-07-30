@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.params=args
+comment0.target=void\ main(java.lang.String[])
+comment1.params=
+comment1.target=java.io.File\ getFile()
+comment2.params=
+comment2.target=java.io.File\ getOutFile()
+comment3.params=Ipercent
+comment3.target=char\ Cat1(int)
+comment4.params=Npercent
+comment4.target=char\ Cat2(int)
+comment5.params=Fpercent
+comment5.target=char\ Cat3(int)
+comment6.params=Ppercent
+comment6.target=char\ Cat4(int)
+comment7.params=fileout\ name\ Ipercent\ Npercent\ Ppercent\ Fpercent\ category1\ category2\ category3\ category4
+comment7.target=void\ display(java.io.PrintStream,\ java.lang.String,\ int,\ int,\ int,\ int,\ char,\ char,\ char,\ char)
+numComments=8

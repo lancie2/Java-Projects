@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=args
+comment0.target=void\ main(java.lang.String[])
+comment1.params=plaintext\ key
+comment1.target=java.lang.String\ encryptCaesar(java.lang.String,\ int)
+comment2.params=ch\ key
+comment2.target=char\ encryptChar(char,\ int)
+comment3.params=ch\ key
+comment3.target=char\ decryptChar(char,\ int)
+comment4.params=cipher
+comment4.target=void\ printPlain(java.lang.String)
+numComments=5

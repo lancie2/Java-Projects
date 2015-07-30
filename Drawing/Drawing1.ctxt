@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=args
+comment0.target=void\ main(java.lang.String[])
+comment1.params=initialX\ initialY\ pen\ primary\ secondary
+comment1.target=void\ drawAndroid(int,\ int,\ java.awt.Graphics,\ java.awt.Color,\ java.awt.Color)
+comment2.params=initialX\ initialY\ pen\ primary\ secondary
+comment2.target=void\ drawHead(int,\ int,\ java.awt.Graphics,\ java.awt.Color,\ java.awt.Color)
+comment3.params=initialX\ initialY\ pen\ color
+comment3.target=void\ drawBody(int,\ int,\ java.awt.Graphics,\ java.awt.Color)
+comment4.params=initialX\ initialY\ pen\ color
+comment4.target=void\ drawAntenae(int,\ int,\ java.awt.Graphics,\ java.awt.Color)
+comment5.params=initialX\ initialY\ pen\ color
+comment5.target=void\ drawArm(int,\ int,\ java.awt.Graphics,\ java.awt.Color)
+comment6.params=initialX\ initialY\ pen\ color
+comment6.target=void\ drawLeg(int,\ int,\ java.awt.Graphics,\ java.awt.Color)
+numComments=7

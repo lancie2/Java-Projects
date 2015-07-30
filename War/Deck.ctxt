@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Deck()
+comment1.params=
+comment1.target=void\ shuffle()
+comment2.params=
+comment2.target=Card\ dealCard()
+comment3.params=
+comment3.target=int\ getTop()
+comment4.params=
+comment4.target=int\ getDeckSize()
+comment5.params=
+comment5.target=java.lang.String\ toString()
+comment6.params=card\ index
+comment6.target=void\ setCard(Card,\ int)
+comment7.params=
+comment7.target=Deck\ clone()
+numComments=8

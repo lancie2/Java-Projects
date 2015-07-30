@@ -1,0 +1,9 @@
+Betty Boop: [90, 15, 0, 0] = ISTJ
+Snoopy: [30, 45, 0, 0] = ESTJ
+Bugs Bunny: [20, 45, 0, 0] = ESTJ
+Daffy Duck: [100, 6, 0, 0] = ISTJ
+The frumious bandersnatch: [86, 95, 0, 0] = INTJ
+Minnie Mouse: [67, 28, 0, 0] = ISTJ
+Luke Skywalker: [89, 61, 0, 0] = INTJ
+Han Solo: [80, 50, 0, 0] = IXTJ
+Princess Leia: [80, 50, 0, 0] = IXTJ

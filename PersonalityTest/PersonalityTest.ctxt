@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=args
+comment0.target=void\ main(java.lang.String[])
+comment1.params=inFile\ outFile
+comment1.target=void\ processFile(java.io.File,\ java.io.File)
+comment2.params=answersProcessed\ answers
+comment2.target=java.lang.String\ processAnswers(int[],\ java.lang.String)
+comment2.text=\r\n\ This\ method\ accepts\ an\ int\ array\ which\ it\ also\ modifies,\ a\ string\ containing\ the\ answers\ for\r\n\ each\ testee\ to\ the\ personality\ test,\ and\ a\ string\ containing\ each\ testee's\ answers\r\n
+comment3.params=answers
+comment3.target=int\ processDimension(char[])
+comment3.text=\r\n\ This\ method\ takes\ the\ testee's\ answers\ for\ each\ dimension\ of\ the\ personality\ test\r\n\ and\ determines\ their\ answer\ for\ each\ question,\ totalling\ "A"\ answers\ and\ "B"\ answers.\ \ \r\n\ It\ then\ processes\ these\ into\ a\ percentage,\ and\ passes\ this\ value\ back.\r\n
+numComments=4
